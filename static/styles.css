@@ -1,0 +1,114 @@
+body {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.crimson-pro-font {
+    font-family: "Crimson Pro", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.container {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.form-floating {
+    width: 100%;
+    font-size: 2rem;
+}
+
+.text-heading {
+    font-size: 400%;
+    text-align: center;
+    line-height: normal;
+}
+
+.prompt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    text-align: center;
+}
+
+.btn-container {
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+#button {
+    background: none;
+    border-radius: 6px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: lightgray;
+    transition: 0.15s;
+}
+
+#button:hover {
+    box-shadow: 0 0 7px lightgray;
+}
+
+#floatingTextarea {
+    margin-top: 1%;
+    height: 400px;
+    font-size: 1.5rem;
+    padding-top: 1%;
+}
+
+#floatingTextarea:focus::placeholder {
+    color: transparent;    
+}
+
+.form-control-area {
+    padding: 1%;
+    width: 100%;
+    border-radius: 10px;
+    border-color: lightgray;
+    outline: none;
+    transition: 0.15s;
+}
+
+.form-control-area:focus {
+    box-shadow: 0 0 7px lightgray;
+}
+
+.result-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xxx-large;
+    width: 100%;
+}
+
+.not-spam {
+    font-size: xxx-large;
+    color: green;
+}
+
+.spam {
+    font-size: xxx-large;
+    color: red;
+}
+
+.icon {
+    display: inline;
+    margin-right: 1%;
+}
+
+.redirect {
+    text-align: center;
+    font-size: x-large;
+}

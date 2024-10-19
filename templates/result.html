@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Detector Result</title>
+</head>
+<body>
+    <div class="container crimson-pro-font">
+        <div class="text-heading">Spam E–Mail Detection Result</div>
+        <div class="prompt">
+            <span class="mt-3">The E–Mail was detected as: </span>
+        </div>
+        <div class="result-container">
+            {% if result %}
+            <i class="fa-solid fa-exclamation icon fa-sm" style="color: #ff0000;"></i>
+            <div class="spam">SPAM</div>
+            {% else %}
+            <i class="fa-solid fa-check icon" style="color: #008000;"></i>
+            <div class="not-spam">NOT SPAM</div> 
+            {% endif %}
+        </div>
+        <span class="redirect">Click <a href="/">here</a> to check another E–Mail</span>
+    </div>
+</body>
+</html>
